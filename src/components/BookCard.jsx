@@ -4,8 +4,9 @@ import "../App.css";
 const BookCard = ({ book }) => {
   const coverId = book.cover_i;
   const coverUrl = coverId
-    ? `https://covers.openlibrary.org/b/id/${coverId}-M.jpg`
-    : "https://via.placeholder.com/150x220?text=No+Cover";
+  ? `https://covers.openlibrary.org/b/id/${coverId}-M.jpg`
+  : "/cover_not_found.jpg"; 
+
 
   return (
     <div className="book-card">
